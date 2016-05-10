@@ -13,15 +13,15 @@ keystone.init({
 
 	'name': 'watchout-next',
 	'brand': 'watchout-next',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
@@ -88,6 +88,7 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
+	'events': ['events', 'event-categories', 'milestones', 'topics', 'people'],
 	'posts': ['posts', 'post-categories'],
 	'galleries': 'galleries',
 	'enquiries': 'enquiries',
